@@ -1,0 +1,10 @@
+node_modules/
+session/
+*.log
+.env
+dtbs/database.json
+src/*.mp4
+src/*.mp3
+src/*.png
+src/*.jpg
+src/*.webp

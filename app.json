@@ -1,0 +1,27 @@
+{
+  "name": "ladybug-md",
+  "description": "🐞 Ladybug MD — WhatsApp Multi-Device Bot",
+  "keywords": ["whatsapp", "bot", "md", "baileys"],
+  "image": "heroku/nodejs",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "MONGODB_URI": {
+      "description": "MongoDB connection URI for persistent database (optional)",
+      "required": false
+    },
+    "API_KEY": {
+      "description": "Your bot panel API key",
+      "required": false
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  }
+}
